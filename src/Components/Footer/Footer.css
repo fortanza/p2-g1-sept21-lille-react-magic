@@ -12,7 +12,7 @@
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  bottom: -141px;
+  bottom: -250px;
   background-color: #333;
 }
 
@@ -100,6 +100,18 @@ p {
 }
 
 @media only screen and (max-width: 520px) {
+  .container {
+    padding: 0 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: -562px;
+    background-color: #333;
+  }
+
   .social-btn {
     display: flex;
     flex-wrap: wrap;
