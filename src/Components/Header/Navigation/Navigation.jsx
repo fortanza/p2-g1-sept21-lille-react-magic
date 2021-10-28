@@ -2,9 +2,9 @@ import Deck from './Deck/Deck';
 import Filter from './Filter/Filter';
 import Random from './Random/Random';
 
-const Nagivation = () => {
+const Navigation = () => {
   return (
-    <ul>
+    <ul className="navigationList">
       <Filter />
       <Random />
       <Deck />
@@ -12,4 +12,4 @@ const Nagivation = () => {
   );
 };
 
-export default Nagivation;
+export default Navigation;
