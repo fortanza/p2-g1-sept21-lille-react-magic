@@ -1,10 +1,7 @@
 const Filter = () => {
   return (
     <li>
-      <img
-        src="https://img.icons8.com/dotty/80/000000/filter-and-sort.png"
-        alt="filter"
-      />
+      <img className="filter" src="/assets/img/filter.png" alt="filter" />
     </li>
   );
 };
