@@ -5,20 +5,50 @@
 }
 
 .navigationList {
+  height: 12vh;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .logo {
-  width: 35vh;
-  margin-left: 1vw;
+  width: 30vh;
+  margin-left: 1.5vw;
+  margin-top: 2vh;
 }
 
 .filter {
-  width: 7vh;
+  width: 2.5vw;
+  margin-right: 1.5vw;
 }
 
 .random {
-  width: 7vh;
+  width: 2.5vw;
+  margin-right: 1.5vw;
+}
+
+.deck {
+  width: 3vw;
+  margin-right: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    display: none;
+  }
+
+  .logo {
+    width: 30vh;
+    margin-left: 5.5vw;
+  }
+
+  .random {
+    width: 8vw;
+    margin-right: 5vw;
+  }
+
+  .deck {
+    width: 10vw;
+    margin-right: 5vw;
+  }
 }
