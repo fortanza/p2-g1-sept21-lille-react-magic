@@ -4,7 +4,7 @@
   justify-content: center;
   width: 128px;
   height: 128px;
-  background: url(img/logo.png);
+  background: url(assets/img/logo.png);
   background-size: cover;
   border-radius: 50%;
 }
@@ -34,34 +34,34 @@
 }
 
 .circle1 {
-  background: url(/public/assets/img/centerLogo.png);
+  background: url(assets/img/white.png);
   background-size: cover;
   top: calc((50% - 48px) + 0px);
   left: calc((50% - 48px) + 128px);
 }
 
 .circle2 {
-  background: url(/public/assets/img/blue.png);
+  background: url(assets/img/blue.png);
   background-size: cover;
   top: calc((50% - 48px) + 122px);
   left: calc((50% - 48px) + 40px);
 }
 
 .circle3 {
-  background: url(/public/assets/img/black.png);
+  background: url(assets/img/black.png);
   background-size: cover;
   top: calc((50% - 48px) + 75px);
   left: calc((50% - 48px) - 104px);
 }
 
 .circle4 {
-  background: url(/public/assets/img/red.png);
+  background: url(assets/img/red.png);
   background-size: cover;
   left: calc((50% - 48px) - 104px);
 }
 
 .circle5 {
-  background: url(/public/assets/img/green.png);
+  background: url(assets/img/green.png);
   background-size: cover;
   top: calc((50% - 48px) - 122px);
   left: calc((50% - 48px) + 40px);
