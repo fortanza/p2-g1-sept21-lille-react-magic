@@ -1,31 +1,24 @@
 @font-face {
   font-family: 'Gotham Narrow';
-  src: url('./assets/font/Overpass-Regular.ttf');
+  src: url('../public/assets/font/Overpass-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Beleren';
-  src: url('./assets/font/Beleren2016-Bold.ttf');
+  src: url('../public/assets/font/Beleren2016-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Beleren Small Caps';
-  src: url('./assets/font/Overpass-Regular.ttf');
+  src: url('../public/assets/font/Overpass-Regular.ttf');
 }
 
 :root {
   --color-primary: #112031;
-  --color-primary-light: #1c3552;
-  --color-primary-dark: #0a121b;
   --color-secondary: #152d35;
-  --color-secondary-light: #17343d;
-  --color-secondary-dark: #11252c;
   --color-tertiary: #345b63;
-  --color-tertiary-light: #48808b;
-  --color-tertiary-dark: #1c3338;
+  --color-shadow: rgb(7, 208, 248);
   --font-color: #d4ecdd;
-  --color-grey-light-1: #f7f7f7;
-  --color-grey-light-2: #eee;
   --color-grey-dark: #777;
   --color-grey-dark-2: #999;
   --color-grey-dark-3: #333;
