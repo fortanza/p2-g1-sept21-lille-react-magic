@@ -1,5 +1,11 @@
+import SectionSearch from 'Components/SectionSearch/SectionSearch';
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <SectionSearch />
+    </>
+  );
 };
 
 export default Home;
