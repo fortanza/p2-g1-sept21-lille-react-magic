@@ -1,3 +1,5 @@
+import './RotateLogo.css';
+
 const RotateLogo = () => {
   return (
     <div className="logo">
