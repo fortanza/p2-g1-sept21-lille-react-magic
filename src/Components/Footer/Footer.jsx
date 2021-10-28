@@ -1,6 +1,5 @@
 import './Footer.css';
 import { Popup } from 'semantic-ui-react';
-import mtglogo from './magic-logo.png';
 
 export default function Footer() {
   return (
@@ -25,7 +24,7 @@ export default function Footer() {
                 <img
                   className="mtglogoimg"
                   alt="Site officiel Magic: The Gathering"
-                  src={mtglogo}
+                  src="img/magic-logo.png"
                 />
               </button>
             }
