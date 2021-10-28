@@ -1,0 +1,88 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+  background: url(assets/img/logo.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.pivot {
+  display: block;
+  position: relative;
+  transform-origin: center;
+  animation-name: spinAnim;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.reverseSpinAnim {
+  animation-name: reverseSpinAnim;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.circle {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.circle1 {
+  background: url(assets/img/white.png);
+  background-size: cover;
+  top: calc((50% - 48px) + 0px);
+  left: calc((50% - 48px) + 128px);
+}
+
+.circle2 {
+  background: url(assets/img/blue.png);
+  background-size: cover;
+  top: calc((50% - 48px) + 122px);
+  left: calc((50% - 48px) + 40px);
+}
+
+.circle3 {
+  background: url(assets/img/black.png);
+  background-size: cover;
+  top: calc((50% - 48px) + 75px);
+  left: calc((50% - 48px) - 104px);
+}
+
+.circle4 {
+  background: url(assets/img/red.png);
+  background-size: cover;
+  left: calc((50% - 48px) - 104px);
+}
+
+.circle5 {
+  background: url(assets/img/green.png);
+  background-size: cover;
+  top: calc((50% - 48px) - 122px);
+  left: calc((50% - 48px) + 40px);
+}
+
+@keyframes spinAnim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverseSpinAnim {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(deg);
+  }
+}
