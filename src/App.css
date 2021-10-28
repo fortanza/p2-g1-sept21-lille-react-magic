@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Gotham Narrow';
-  src: url('../public/assets/font/Overpass-Regular.ttf');
+  src: url('./assets/font/Overpass-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Beleren';
-  src: url('../public/assets/font/Beleren2016-Bold.ttf');
+  src: url('./assets/font/Beleren2016-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Beleren Small Caps';
-  src: url('../public/assets/font/Overpass-Regular.ttf');
+  src: url('./assets/font/Overpass-Regular.ttf');
 }
 
 :root {
