@@ -3,15 +3,15 @@ import './SearchBar.css';
 export default function SearchBar() {
   return (
     <>
-      <h1>Planeswalker-database</h1>
+      <h1>Planeswalker</h1> <br />
+      <h2>Magic: The Gathering Database</h2>
       <div className="wrap">
-        <input type="search" className="searchTerm" placeholder="Search.." />
-        <button type="submit" className="searchButton">
-          <img
-            src="https://img.icons8.com/carbon-copy/50/000000/google-web-search.png"
-            alt="loupe"
-          />
-        </button>
+        <input type="search" className="searchTerm" placeholder="Search..." />
+        <img
+          className="input-logo"
+          alt="loupe"
+          src="https://img.icons8.com/ios-glyphs/60/000000/search--v1.png"
+        />
       </div>
     </>
   );
