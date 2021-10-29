@@ -1,4 +1,4 @@
-import SectionSearch from 'Components/SectionSearch/SectionSearch';
+import SectionSearch from 'Components/SectionSearchbar/SectionSearch';
 
 const Home = () => {
   return (
