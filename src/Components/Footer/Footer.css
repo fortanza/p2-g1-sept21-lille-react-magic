@@ -35,7 +35,7 @@ p {
   padding: 0 20px;
   margin: 0 0 7px 0;
   font-size: 10px;
-  color: rgb(94, 91, 91);
+  color: rgb(109, 106, 106);
 }
 
 .social-btn {
@@ -101,7 +101,7 @@ p {
 
 @media only screen and (max-width: 520px) {
   .container {
-    padding: 0 20vw;
+    padding: 2vh 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -116,8 +116,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 33px;
-    height: 33px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     margin: 10px;
   }
@@ -127,7 +127,7 @@ p {
     flex-direction: column;
     font-size: 20px;
     margin: 0 20px;
-    padding: 10px 10px 10px 0;
+    padding: 0 10px 10px 0;
     order: -1;
   }
 
