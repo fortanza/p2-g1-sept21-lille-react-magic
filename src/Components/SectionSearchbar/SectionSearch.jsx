@@ -4,7 +4,7 @@ import './SectionSearch.css';
 
 export default function SectionSearch() {
   return (
-    <section className="Section_searchbar">
+    <section className="sectionSearchbar">
       <RotateLogo />
       <SearchBar />
     </section>
