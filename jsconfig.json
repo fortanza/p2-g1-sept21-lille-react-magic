@@ -2,10 +2,5 @@
   "compilerOptions": {
     "baseUrl": "src"
   },
-  "include": [
-    "src",
-    "SectionSearchbar/SectionSearch.jsx",
-    "SectionSearchbar/SearchBar",
-    "SectionSearchbar/RotateLogo"
-  ]
+  "include": ["src"]
 }
