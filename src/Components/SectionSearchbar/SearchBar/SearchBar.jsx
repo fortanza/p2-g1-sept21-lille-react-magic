@@ -9,7 +9,7 @@ export default function SearchBar() {
         <input type="search" className="searchTerm" placeholder="Search..." />
         <img
           className="input-logo"
-          alt="loupe"
+          alt="Magnifying glass icon"
           src="https://img.icons8.com/ios-glyphs/60/000000/search--v1.png"
         />
       </div>
