@@ -4,7 +4,7 @@ import Nagivation from './Navigation/Navigation';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={['header', 'container'].join(' ')}>
       <Logo />
       <Nagivation />
     </header>
