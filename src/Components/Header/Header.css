@@ -1,54 +1,20 @@
 .header {
-  height: 30vh;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
 }
 
 .navigationList {
-  height: 12vh;
   list-style: none;
   display: flex;
-  align-items: center;
 }
 
-.logo {
-  width: 30vh;
-  margin-left: 1.5vw;
-  margin-top: 2vh;
+.logo-header {
+  width: 40px;
+  margin: 3px 10px 0 5px;
+  cursor: pointer;
 }
 
-.filter {
-  width: 2.5vw;
-  margin-right: 1.5vw;
-}
-
-.random {
-  width: 2.5vw;
-  margin-right: 1.5vw;
-}
-
-.deck {
-  width: 3vw;
-  margin-right: 1.5vw;
-}
-
-@media only screen and (max-width: 600px) {
-  .filter {
-    display: none;
-  }
-
-  .logo {
-    width: 30vh;
-    margin-left: 5.5vw;
-  }
-
-  .random {
-    width: 8vw;
-    margin-right: 5vw;
-  }
-
-  .deck {
-    width: 10vw;
-    margin-right: 5vw;
-  }
+.nav-logo {
+  width: 150px;
 }

@@ -1,12 +1,12 @@
 .logo {
+  padding: 30px;
+  margin: 0 0 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 128px;
-  height: 128px;
-  background: url(assets/img/logo.png);
+  width: 64px;
+  height: 64px;
   background-size: cover;
-  border-radius: 50%;
 }
 
 .pivot {
@@ -28,43 +28,39 @@
 
 .circle {
   position: absolute;
-  width: 96px;
-  height: 96px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
 }
 
 .circle1 {
-  background: url(assets/img/white.png);
   background-size: cover;
-  top: calc((50% - 48px) + 0px);
-  left: calc((50% - 48px) + 128px);
+  top: calc((50% - 24px) + 0px);
+  left: calc((50% - 24px) + 64px);
 }
 
 .circle2 {
-  background: url(assets/img/blue.png);
   background-size: cover;
-  top: calc((50% - 48px) + 122px);
-  left: calc((50% - 48px) + 40px);
+  top: calc((50% - 24px) + 61px);
+  left: calc((50% - 24px) + 20px);
 }
 
 .circle3 {
-  background: url(assets/img/black.png);
   background-size: cover;
-  top: calc((50% - 48px) + 75px);
-  left: calc((50% - 48px) - 104px);
+  top: calc((50% - 24px) + 37.5px);
+  left: calc((50% - 24px) - 52px);
 }
 
 .circle4 {
-  background: url(assets/img/red.png);
   background-size: cover;
-  left: calc((50% - 48px) - 104px);
+  top: calc((50% - 24px) - 37.5px);
+  left: calc((50% - 24px) - 52px);
 }
 
 .circle5 {
-  background: url(assets/img/green.png);
   background-size: cover;
-  top: calc((50% - 48px) - 122px);
-  left: calc((50% - 48px) + 40px);
+  top: calc((50% - 24px) - 61px);
+  left: calc((50% - 24px) + 20px);
 }
 
 @keyframes spinAnim {
@@ -83,6 +79,6 @@
   }
 
   to {
-    transform: rotate(deg);
+    transform: rotate(0deg);
   }
 }
