@@ -20,8 +20,8 @@ const Cards = () => {
   }, []);
 
   return (
-    <section>
-      <h2>Cards:{needle}</h2>
+    <section className="container">
+      <h2 className="cardsTitle">Your Cards Search</h2>
       <div className="grid">
         {magicCards.map((magic) => {
           return <MagicCard {...magic} />;

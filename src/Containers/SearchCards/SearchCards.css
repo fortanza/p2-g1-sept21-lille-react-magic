@@ -4,3 +4,7 @@
   grid-gap: 50px;
   margin: 50px;
 }
+
+.cardsTitle {
+  text-align: center;
+}
