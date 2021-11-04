@@ -24,8 +24,22 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2.2rem;
+}
+
+h1,
+h2 {
+  font-family: var(--magic-font-family);
+}
+
 .homePage {
-  background: var(--color-primary);
+  background-image:
+    linear-gradient(
+      var(--color-tertiary),
+      var(--color-secondary),
+      var(--color-primary)
+    );
   background-size: cover;
   color: var(--font-color);
   font-family: var(--magic-font-family);
