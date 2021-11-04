@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CardDescription.css';
 import axios from 'axios';
-// import Random from 'Components/Header/Navigation/Random/Random';
+
 const sampleCard = {
   object: 'card',
   id: '4f5ed974-396a-4b93-8e15-90e180efd17e',
