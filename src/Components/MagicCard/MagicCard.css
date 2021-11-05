@@ -12,23 +12,23 @@
 
 .myButton {
   box-shadow: 3px 4px 0 0 var(--color-secondary);
-  background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background: linear-gradient(to bottom, #1f75c6 5%, #37a7f2 100%);
   margin: 10px 0;
   background-color: var(--color-secondary);
   border-radius: 18px;
-  border: 1px solid #d02718;
+  border: 1px solid #18a5d0;
   display: inline-block;
   cursor: pointer;
   color: #fff;
   font-size: 17px;
   padding: 7px 25px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #810e05;
+  text-shadow: 0 1px 0 #053781;
 }
 
 .myButton:hover {
-  background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-  background-color: #f24437;
+  background: linear-gradient(to bottom, #3791f2 5%, #1f83c6 100%);
+  background-color: #3791f2;
 }
 
 .myButton:active {
