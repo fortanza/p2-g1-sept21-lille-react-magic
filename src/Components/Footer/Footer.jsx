@@ -3,7 +3,7 @@ import { Popup } from 'semantic-ui-react';
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footerContainer">
       <footer className="container">
         <ul className="social-container">
           <Popup
