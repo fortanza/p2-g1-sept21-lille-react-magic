@@ -9,12 +9,13 @@ export default function SearchBar() {
 
   const HandlerDiplayCardsContainer = (event) => {
     event.preventDefault();
-    history.push(`/cards/${needle}`);
+    history.push(`/SearchCards/${needle}`);
   };
 
   const HandlerChangeValue = (e) => {
     setNeedle(e.target.value);
   };
+
   return (
     <>
       <h1>Planeswalker</h1> <br />
@@ -28,7 +29,7 @@ export default function SearchBar() {
             onChange={HandlerChangeValue}
           />
           <img
-            className="input-logo"
+            className="InputLogo"
             alt="Magnifying glass icon"
             src="https://img.icons8.com/ios-glyphs/60/000000/search--v1.png"
           />
