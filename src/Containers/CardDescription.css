@@ -1,4 +1,4 @@
-.Container {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,11 +7,11 @@
   margin: 0 400px 0 370px;
 }
 
-.CardAttribute {
+.cardAttribute {
   height: 30vh;
 }
 
-.CardDescription {
+.cardDescription {
   width: 70vw;
   display: flex;
   flex-direction: row;
@@ -19,23 +19,23 @@
   overflow: auto;
 }
 
-.TextContainer {
+.textContainer {
   margin-top: 30px;
 }
 
-.CardName {
+.cardName {
   font-size: 20px;
   color: white;
   padding-top: 10px;
   font-weight: bold;
 }
 
-.CardImage {
+.cardImage {
   margin: 20px;
   width: 300px;
 }
 
-.CardFlavour {
+.cardFlavour {
   font-style: italic;
   color: white;
   padding-top: 10px;
@@ -43,14 +43,14 @@
   font-size: 15px;
 }
 
-.CardType {
+.cardType {
   color: white;
   font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.CardOracle {
+.cardOracle {
   color: white;
   font-size: 15px;
   padding-top: 10px;
@@ -63,7 +63,7 @@
   opacity: 0.3;
 }
 
-.logo-reload {
+.logoReload {
   width: 3vw;
   cursor: pointer;
 }

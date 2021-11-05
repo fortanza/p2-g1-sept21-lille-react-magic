@@ -133,20 +133,20 @@ export default function CardDescription() {
   };
 
   return (
-    <div className="Container">
-      <div className="CardDescription">
+    <div className="container">
+      <div className="cardDescription">
         <img
-          className="CardImage"
+          className="cardImage"
           src={card?.image_uris?.png}
           alt="A magic card"
         />
-        <div className="CardAttribute">
-          <div className="TextContainer">
-            <p className="CardName">{card.name}</p>
-            <p className="CardType">{card.type_line}</p>
-            <p className="CardOracle">{card.oracle_text}</p>
+        <div className="cardAttribute">
+          <div className="textContainer">
+            <p className="cardName">{card.name}</p>
+            <p className="cardType">{card.type_line}</p>
+            <p className="cardOracle">{card.oracle_text}</p>
             {card.flavor_text ? (
-              <p className="CardFlavour"> {card.flavor_text}</p>
+              <p className="cardFlavour"> {card.flavor_text}</p>
             ) : (
               ''
             )}
@@ -154,7 +154,7 @@ export default function CardDescription() {
           <button type="submit" onClick={GetRandomCards}>
             <li>
               <img
-                className="logo-reload"
+                className="logoReload"
                 src="/assets/img/reload.png"
                 alt="reload"
               />
