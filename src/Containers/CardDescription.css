@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 400px 0 370px;
+}
+
+.cardAttribute {
+  height: 30vh;
+}
+
+.cardDescription {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  overflow: auto;
+}
+
+.textContainer {
+  margin-top: 30px;
+}
+
+.cardName {
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.cardImage {
+  margin: 20px;
+  width: 300px;
+}
+
+.cardFlavour {
+  font-style: italic;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.cardType {
+  color: white;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardOracle {
+  color: white;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.frame {
+  width: 30vw;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.logoReload {
+  width: 3vw;
+  cursor: pointer;
+}

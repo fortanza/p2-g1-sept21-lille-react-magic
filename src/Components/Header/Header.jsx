@@ -1,12 +1,12 @@
 import './Header.css';
 import Logo from './Logo/Logo';
-import Nagivation from './Navigation/Navigation';
+import Navigation from './Navigation/Navigation';
 
 const Header = () => {
   return (
     <header className={['header', 'container'].join(' ')}>
       <Logo />
-      <Nagivation />
+      <Navigation />
     </header>
   );
 };

@@ -1,13 +1,19 @@
+import { Link } from 'react-router-dom';
+import './Random.css';
+
 const Random = () => {
   return (
-    <li>
-      <img
-        className="random logo-header"
-        src="/assets/img/random.png"
-        alt="random"
-      />
-    </li>
+    <Link to="/Cards/">
+      <button type="submit">
+        <li>
+          <img
+            className="random logo-header"
+            src="/assets/img/random.png"
+            alt="random"
+          />
+        </li>
+      </button>
+    </Link>
   );
 };
-
 export default Random;
