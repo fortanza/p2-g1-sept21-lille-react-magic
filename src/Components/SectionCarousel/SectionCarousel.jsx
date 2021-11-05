@@ -2,7 +2,8 @@ import './SectionCarousel.css';
 
 const SectionCarousel = () => {
   return (
-    <section className="Slide-Caroussel">
+      <section className="SlideCaroussel">
+
       <h1>essai</h1>
     </section>
   );
