@@ -1,6 +1,8 @@
-.section_caroussel {
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sectionCaroussel {
+  height: 50vh;
+  margin: 30px;
+}
+
+.react-3d-carousel {
+  padding: 15vh;
 }
