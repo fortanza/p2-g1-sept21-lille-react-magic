@@ -1,12 +1,11 @@
-import SectionCarousel from 'Components/SectionCarousel/SectionCarousel';
+import SectionCaroussel from 'Components/SectionCaroussel/SectionCaroussel';
 import SectionSearch from 'Components/SectionSearchbar/SectionSearch';
-import SlidesCaroussel from 'Components/SectionCaroussel/SectionCaroussel';
 
 const Home = () => {
   return (
     <>
       <SectionSearch />
-      <SectionCarousel />
+      <SectionCaroussel />
     </>
   );
 };
