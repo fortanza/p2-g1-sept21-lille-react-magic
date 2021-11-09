@@ -10,7 +10,7 @@ const MagicCard = ({ name, imageUrl }) => {
         Description
       </button>
       <button className="myButton" type="button">
-        Add to Desck
+        Add to Deck
       </button>
     </figure>
   );
