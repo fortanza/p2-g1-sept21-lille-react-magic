@@ -1,22 +1,20 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0 400px 0 370px;
-}
 
 .cardAttribute {
-  height: 30vh;
+  height: 50vh;
+  width: 30vw;
+  background-color: #301e38;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .cardDescription {
   width: 70vw;
   display: flex;
   flex-direction: row;
-  z-index: 2;
-  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 400px 100px 150px;
 }
 
 .textContainer {
@@ -28,10 +26,11 @@
   color: white;
   padding-top: 10px;
   font-weight: bold;
+  border-bottom: solid 1px blanchedalmond;
 }
 
 .cardImage {
-  margin: 20px;
+  margin: 0 20px;
   width: 300px;
 }
 
@@ -66,4 +65,8 @@
 .logoReload {
   width: 3vw;
   cursor: pointer;
+}
+
+li {
+  list-style-type: none;
 }
