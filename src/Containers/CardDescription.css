@@ -1,13 +1,4 @@
 
-.cardAttribute {
-  height: 50vh;
-  width: 30vw;
-  background-color: #301e38;
-  border-radius: 10px;
-  padding: 0 20px 0 20px;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 .cardDescription {
   width: 70vw;
   display: flex;
@@ -17,16 +8,19 @@
   margin: 50px 400px 100px 150px;
 }
 
-.textContainer {
-  margin-top: 30px;
+.cardAttribute {
+  width: 30vw;
+  height: 70vh;
+  background-color: #301e38;
+  border-radius: 10px;
+  padding: 0 20px 0 20px;
+  border-top: #301e38 10px solid;
+  border-bottom: #301e38 10px solid;
+  box-shadow: rgba(160, 7, 248, 0.4) 5px 5px, rgba(169, 15, 216, 0.3) 10px 10px, rgba(163, 15, 221, 0.2) 15px 15px, rgba(152, 5, 250, 0.1) 20px 20px, rgba(142, 18, 224, 0.05) 25px 25px;
 }
 
-.cardName {
-  font-size: 20px;
-  color: white;
-  padding-top: 10px;
-  font-weight: bold;
-  border-bottom: solid 1px blanchedalmond;
+.textContainer {
+  margin-top: 10px;
 }
 
 .cardImage {
@@ -34,12 +28,12 @@
   width: 300px;
 }
 
-.cardFlavour {
-  font-style: italic;
-  color: white;
-  padding-top: 10px;
+.cardName {
   padding-bottom: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-bottom: solid 1px rgb(107, 107, 107);
 }
 
 .cardType {
@@ -54,12 +48,31 @@
   font-size: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: solid 1px rgb(107, 107, 107);
 }
 
-.frame {
-  width: 30vw;
-  background-color: white;
-  opacity: 0.3;
+.cardFlavour {
+  font-style: italic;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  border-bottom: solid 1px rgb(107, 107, 107);
+}
+
+.cardPower {
+  padding: 7px;
+  font-size: 18px;
+}
+
+.cardArtist {
+  font-style: italic;
+  text-align: end;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
 }
 
 .logoReload {

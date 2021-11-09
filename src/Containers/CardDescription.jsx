@@ -141,14 +141,30 @@ export default function CardDescription() {
       />
       <div className="cardAttribute">
         <div className="textContainer">
-          <p className="cardName">{card.name}</p>
+          <p className="cardName">
+            {card.name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {card.mana_cost}
+          </p>
           <p className="cardType">{card.type_line}</p>
+
           <p className="cardOracle">{card.oracle_text}</p>
+          <p className="cardType">Set :&nbsp;{card.set_name}</p>
+          <p className="cardType">Rarity :&nbsp;{card.rarity}</p>
           {card.flavor_text ? (
-            <p className="cardFlavour"> {card.flavor_text}</p>
+            <p className="cardFlavour">{card.flavor_text}&#34;</p>
           ) : (
             ''
           )}
+          {card.power ? (
+            <p className="cardPower">
+              {' '}
+              {card.power}/{card.toughness}
+            </p>
+          ) : null}
+          <p className="cardArtist">
+            🎨 &nbsp;&nbsp;{card.artist}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;{' '}
+            {card.frame}
+          </p>
           <button type="submit" onClick={GetRandomCards}>
             <li>
               <img
