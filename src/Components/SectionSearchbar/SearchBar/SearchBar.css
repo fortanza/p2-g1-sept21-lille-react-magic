@@ -1,3 +1,8 @@
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 .wrap {
   width: 60%;
   position: relative;
@@ -13,21 +18,20 @@
 }
 
 h2 {
-  padding: 10px;
+  padding: 15px;
   font-weight: 100;
   font-size: 20px;
 }
 
 .searchTerm {
-  padding-left: 6vh;
+  padding-left: 8vh;
   width: 100%;
-  height: 8vh;
+  height: 9vh;
   background-color: #000;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 4px solid #fff;
   font-size: 1.87rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px #000;
+  box-shadow: 1px 1px 20px #000;
 }
 
 .InputLogo {

@@ -31,7 +31,7 @@ export default function SearchBar() {
           <img
             className="InputLogo"
             alt="Magnifying glass icon"
-            src="https://img.icons8.com/ios-glyphs/60/000000/search--v1.png"
+            src="https://img.icons8.com/ios-glyphs/60/ffffff/search--v1.png"
           />
         </form>
       </div>
