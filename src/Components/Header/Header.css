@@ -1,5 +1,5 @@
-.header {
-  height: 20vh;
+.headerContainer {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
 }
