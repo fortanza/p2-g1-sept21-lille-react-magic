@@ -9,14 +9,14 @@ ul {
   width: 100%;
 }
 
-.social-container {
+.socialContainer {
   padding: 0;
   display: flex;
   justify-content: space-around;
   padding-bottom: 3vh;
 }
 
-.links-container {
+.linksContainer {
   padding-bottom: 1rem;
   margin: 10px 0 15px 0;
   display: flex;
@@ -32,8 +32,8 @@ ul {
   color: var(--color-white);
 }
 
-.social-btn {
-  background: var(--color-secondary);
+.socialBtn {
+  background: var(--color-black);
   width: 50px;
   height: 50px;
   margin: 0 15px;
@@ -42,11 +42,10 @@ ul {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  outline: none;
   border-radius: 15px;
   box-shadow:
-    5px 5px 6px var(--color-tertiary),
-    -5px -5px 6px var(--color-tertiary);
+    5px 5px 3px var(--color-white),
+    -5px -5px 3px var(--color-black);
 }
 
 .link {
@@ -90,22 +89,13 @@ ul {
 }
 
 .popup {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-black);
   margin-bottom: 9px;
   padding: 15px;
 }
 
 @media only screen and (max-width: 520px) {
-  .container {
-    padding: 2vh 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .social-btn {
+  .socialBtn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -115,7 +105,7 @@ ul {
     margin: 10px;
   }
 
-  .links-container {
+  .linksContainer {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -124,7 +114,7 @@ ul {
     order: -1;
   }
 
-  .social-container {
+  .socialContainer {
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px 20px 10px;
