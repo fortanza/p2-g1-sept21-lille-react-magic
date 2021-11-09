@@ -18,7 +18,7 @@ export default function SearchBar() {
 
   return (
     <>
-      <h1>Planeswalker</h1> <br />
+      <h1 className="siteTitle">Planeswalker</h1> <br />
       <h2>Magic: The Gathering Database</h2>
       <div className="wrap">
         <form onSubmit={HandlerDiplayCardsContainer}>
