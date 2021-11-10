@@ -4,9 +4,9 @@ import './SectionSearch.css';
 
 export default function SectionSearch() {
   return (
-    <section className={['container', 'sectionSearchbar'].join(' ')}>
-      <RotateLogo />
+    <section className={['searchbarContainer', 'sectionSearchbar'].join(' ')}>
       <SearchBar />
+      <RotateLogo />
     </section>
   );
 }

@@ -4,7 +4,7 @@ import Navigation from './Navigation/Navigation';
 
 const Header = () => {
   return (
-    <header className={['header', 'container'].join(' ')}>
+    <header className={['header', 'headerContainer'].join(' ')}>
       <Logo />
       <Navigation />
     </header>

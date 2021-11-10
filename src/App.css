@@ -3,7 +3,7 @@
   --color-secondary: #152d35;
   --color-tertiary: #345b63;
   --color-shadow: rgb(7, 208, 248);
-  --font-color: #d4ecdd;
+  --font-color: #fff;
   --color-grey-dark: #777;
   --color-grey-dark-2: #999;
   --color-grey-dark-3: #333;
@@ -11,9 +11,9 @@
   --color-black: #000;
   --base-font-family: 'Open Sans', arial, sans-serif;
   --base-font-size: 16px;
-  --strong-font-family: 'Gotham Narrow', arial, serif;
-  --magic-font-family: 'Beleren', serif;
-  --magic-font-family-small-caps: 'Beleren Small Caps', serif;
+  --strong-font-family: 'Gotham Narrow', arial, sans-serif;
+  --magic-font-family: 'Beleren', sans-serif;
+  --magic-font-family-small-caps: 'Beleren Small Caps', sans-serif;
 }
 
 *,
@@ -34,15 +34,11 @@ h2 {
 }
 
 .homePage {
-  background-image:
-    linear-gradient(
-      var(--color-tertiary),
-      var(--color-secondary),
-      var(--color-primary)
-    );
-  background-size: cover;
   color: var(--font-color);
   font-family: var(--magic-font-family);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .container {

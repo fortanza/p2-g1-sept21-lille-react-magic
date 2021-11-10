@@ -2,22 +2,22 @@ ul {
   list-style-type: none;
 }
 
-.footerContainer {
+.footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
+  background-color: #000;
 }
 
-.social-container {
+.socialContainer {
   padding: 0;
   display: flex;
   justify-content: space-around;
   padding-bottom: 3vh;
 }
 
-.links-container {
+.linksContainer {
   padding-bottom: 1rem;
   margin: 10px 0 15px 0;
   display: flex;
@@ -25,29 +25,28 @@ ul {
   flex-direction: row;
 }
 
-p {
+.disclamer {
   padding: 1rem 0;
-  border-top: 1px solid;
-  margin: 0 0 7px 0;
+  border-top: 1px solid rgb(40, 41, 40);
+  margin: 0 40px 7px 40px;
   font-size: 0.7rem;
-  color: var(--color-white);
+  color: rgb(182, 182, 179);
+  text-align: center;
 }
 
-.social-btn {
-  background: var(--color-secondary);
-  width: 50px;
-  height: 50px;
-  margin: 0 15px;
-  border: none;
+.socialBtn {
+  margin: 10px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  outline: none;
   border-radius: 15px;
-  box-shadow:
-    5px 5px 8px var(--color-tertiary),
-    -5px -5px 8px var(--color-tertiary);
+  width: 50px;
+  height: 50px;
+  font-size: 60px;
+  outline: none;
+  border: none;
+  background: #000;
 }
 
 .link {
@@ -68,45 +67,47 @@ p {
 .rulelogo:hover {
   background: #81b71a;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px #202020,
+    -5px -5px 20px #202020;
 }
 
 .mtglogo:hover {
   background: rgb(165, 42, 42);
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px #202020,
+    -5px -5px 20px #202020;
 }
 
 .fblogo:hover {
   background: #3b5998;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px #202020,
+    -5px -5px 20px #202020;
 }
 
 .ytblogo:hover {
   background: #b2071d;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px #202020,
+    -5px -5px 20px #202020;
 }
 
 .twitterlogo:hover {
   background: #00acee;
   transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px #202020,
+    -5px -5px 10px #202020;
 }
 
 .popup {
-  background-color: var(--color-tertiary);
+  background-color: transparent;
   margin-bottom: 9px;
   padding: 15px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 520px) {
-  .container {
-    padding: 2vh 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .social-btn {
+  .socialBtn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,7 +117,7 @@ p {
     margin: 10px;
   }
 
-  .links-container {
+  .linksContainer {
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -125,7 +126,7 @@ p {
     order: -1;
   }
 
-  .social-container {
+  .socialContainer {
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px 20px 10px;

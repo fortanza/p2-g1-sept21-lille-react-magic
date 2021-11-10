@@ -8,7 +8,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="homePage">
+    <div
+      className="homePage"
+      style={{ backgroundImage: 'url(assets/img/backmg.jpg)' }}
+    >
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />

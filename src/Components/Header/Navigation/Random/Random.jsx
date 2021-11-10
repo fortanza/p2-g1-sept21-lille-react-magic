@@ -3,7 +3,7 @@ import './Random.css';
 
 const Random = () => {
   return (
-    <Link to="/Cards/">
+    <Link to="/card">
       <button type="submit">
         <li>
           <img

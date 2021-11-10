@@ -133,24 +133,28 @@ export default function CardDescription() {
   };
 
   return (
-    <div className="container">
-      <div className="cardDescription">
-        <img
-          className="cardImage"
-          src={card?.image_uris?.png}
-          alt="A magic card"
-        />
-        <div className="cardAttribute">
-          <div className="textContainer">
-            <p className="cardName">{card.name}</p>
-            <p className="cardType">{card.type_line}</p>
-            <p className="cardOracle">{card.oracle_text}</p>
-            {card.flavor_text ? (
-              <p className="cardFlavour"> {card.flavor_text}</p>
-            ) : (
-              ''
-            )}
-          </div>
+    <div className="cardDescription">
+      <img
+        className="cardImage"
+        src={card?.image_uris?.png}
+        alt="A magic card"
+      />
+      <div className="cardAttribute">
+        <div className="textContainer">
+          <p className="cardName">{`${card.name}  ${card.mana_cost}`}</p>
+          <p className="cardType">{card.type_line}</p>
+          <p className="cardOracle">{card.oracle_text}</p>
+          <p className="cardType">Set : {card.set_name}</p>
+          <p className="cardType">Rarity : {card.rarity}</p>
+          {card.flavor_text && (
+            <p className="cardFlavour">{card.flavor_text}</p>
+          )}
+          {card.power && (
+            <p className="cardPower">
+              {card.power}/{card.toughness}
+            </p>
+          )}
+          <p className="cardArtist">🎨{`${card.artist} - ${card.frame}`}</p>
           <button type="submit" onClick={GetRandomCards}>
             <li>
               <img
