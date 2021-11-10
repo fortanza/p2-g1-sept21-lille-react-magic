@@ -23,6 +23,7 @@
 .cardImage {
   margin: 0 20px;
   width: 300px;
+  border-radius: 15px;
 }
 
 .cardName {
@@ -79,4 +80,32 @@
 
 li {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .cardDescription {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardAttribute {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  .logoReload {
+    width: 10vw;
+    cursor: pointer;
+  }
+
+  .cardImage {
+    margin-top: 100px;
+  }
 }
