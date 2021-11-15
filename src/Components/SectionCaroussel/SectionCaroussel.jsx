@@ -16,8 +16,6 @@ const SlidesCaroussel = () => {
       });
   }, []);
 
-  // const result = cardLists.filter((card) => card.imageUrl);
-
   return (
     <section className="sectionCaroussel">
       <div>
