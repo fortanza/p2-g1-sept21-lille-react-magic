@@ -127,6 +127,7 @@ export default function CardDescription() {
   const [card, setCard] = useState(sampleCard);
 
   const GetRandomCards = () => {
+    setCard({});
     axios.get(`https://api.scryfall.com/cards/random`).then(({ data }) => {
       setCard({ ...data });
     });
@@ -136,7 +137,11 @@ export default function CardDescription() {
     <div className="cardDescription">
       <img
         className="cardImage"
-        src={card?.image_uris?.png}
+        src={
+          card?.image_uris?.png
+            ? card?.image_uris?.png
+            : 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg'
+        }
         alt="A magic card"
       />
       <div className="cardAttribute">
@@ -156,13 +161,11 @@ export default function CardDescription() {
           )}
           <p className="cardArtist">🎨{`${card.artist} - ${card.frame}`}</p>
           <button type="submit" onClick={GetRandomCards}>
-            <li>
-              <img
-                className="logoReload"
-                src="/assets/img/reload.png"
-                alt="reload"
-              />
-            </li>
+            <img
+              className="logoReload"
+              src="/assets/img/reload.png"
+              alt="reload"
+            />
           </button>
         </div>
       </div>
