@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 const MagicCard = ({ name, imageUrl }) => {
   return (
     <>
-      {imageUrl ? (
+      {imageUrl && (
         <figure className="card">
           <h3>{name}</h3>
           <img src={imageUrl} alt={name} />
         </figure>
-      ) : null}
+      )}
     </>
   );
 };
