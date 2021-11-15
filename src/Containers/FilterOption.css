@@ -1,0 +1,20 @@
+.filterWrap {
+  height: 100vh;
+  padding: 100px;
+}
+
+.inputName {
+  width: 50vw;
+}
+
+.inputPower {
+  width: 10vw;
+}
+
+.filterInput {
+  border-radius: 5px;
+}
+
+.filterSubmit {
+  background-color: white;
+}
