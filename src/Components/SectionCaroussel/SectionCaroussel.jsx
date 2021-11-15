@@ -9,7 +9,7 @@ const SlidesCaroussel = () => {
   useEffect(() => {
     axios
       .get(
-        `https://api.magicthegathering.io/v1/cards?random=true&set=MID&page=1&pageSize=100`
+        `https://api.magicthegathering.io/v1/cards?random=true&set=MID&page=1&pageSize=10`
       )
       .then(({ data }) => {
         setCardLists(data.cards);
