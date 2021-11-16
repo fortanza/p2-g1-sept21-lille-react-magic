@@ -24,7 +24,7 @@ function App() {
         />
         <Route path="/filter" component={FilterOption} />
         <Route
-          path="/searchCards/:needleName/:needlePower/:needleColor/:needleRarity/:needleSet"
+          path="/searchCards/:needleName/:needleType/:needlePower/:needleToughness/:needleColor/:needleRarity/:needleSet"
           component={SearchCards}
         />
       </Switch>
