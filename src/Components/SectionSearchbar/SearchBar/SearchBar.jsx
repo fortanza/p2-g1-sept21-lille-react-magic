@@ -10,11 +10,13 @@ export default function SearchBar() {
   const [needleColor] = useState(' ');
   const [needleRarity] = useState(' ');
   const [needleSet] = useState(' ');
+  const [needleType] = useState(' ');
+  const [needleToughness] = useState(' ');
 
   const HandlerDiplayCardsContainer = (event) => {
     event.preventDefault();
     history.push(
-      `/SearchCards/${needleName}/${needlePower}/${needleColor}/${needleRarity}/${needleSet}`
+      `/SearchCards/${needleName}/${needleType}/${needlePower}/${needleToughness}/${needleColor}/${needleRarity}/${needleSet}`
     );
   };
 
