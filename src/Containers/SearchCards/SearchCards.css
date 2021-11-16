@@ -8,3 +8,11 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.searchError {
+  font-size: 50px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
