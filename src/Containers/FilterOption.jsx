@@ -15,7 +15,7 @@ const FilterOption = () => {
   const HandlerDiplayCardsContainer = (event) => {
     event.preventDefault();
     history.push(
-      `/SearchCardsAdvanced/${needleName}/${needlePower}/${needleColor}/${needleRarity}/${needleSet}`
+      `/SearchCards/${needleName}/${needlePower}/${needleColor}/${needleRarity}/${needleSet}`
     );
   };
 
