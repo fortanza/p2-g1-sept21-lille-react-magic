@@ -5,7 +5,7 @@ import Home from 'Containers/Home';
 import SearchCards from 'Containers/SearchCards/SearchCards';
 import CardDescription from 'Containers/CardDescription';
 import FilterOption from 'Containers/FilterOption';
-import SearchCardsAdvanced from 'Containers/SearchCards/SearchCardsAdvanced';
+
 import './App.css';
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/searchCards/:needle" component={SearchCards} />
         <Route path="/card" component={CardDescription} />
         <Route
           path="/CardDescription/:multiverseid"
@@ -25,8 +24,8 @@ function App() {
         />
         <Route path="/filter" component={FilterOption} />
         <Route
-          path="/SearchCardsAdvanced/:needleName/:needlePower/:needleColor/:needleRarity/:needleSet"
-          component={SearchCardsAdvanced}
+          path="/searchCards/:needleName/:needlePower/:needleColor/:needleRarity/:needleSet"
+          component={SearchCards}
         />
       </Switch>
       <Footer />
