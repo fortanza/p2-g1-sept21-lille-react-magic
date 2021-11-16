@@ -67,36 +67,31 @@ ul {
 .rulelogo:hover {
   background: #81b71a;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 20px #202020,
-    -5px -5px 20px #202020;
+  box-shadow: 5px 5px 20px #202020, -5px -5px 20px #202020;
 }
 
 .mtglogo:hover {
   background: rgb(165, 42, 42);
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 20px #202020,
-    -5px -5px 20px #202020;
+  box-shadow: 5px 5px 20px #202020, -5px -5px 20px #202020;
 }
 
 .fblogo:hover {
   background: #3b5998;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 20px #202020,
-    -5px -5px 20px #202020;
+  box-shadow: 5px 5px 20px #202020, -5px -5px 20px #202020;
 }
 
 .ytblogo:hover {
   background: #b2071d;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 20px #202020,
-    -5px -5px 20px #202020;
+  box-shadow: 5px 5px 20px #202020, -5px -5px 20px #202020;
 }
 
 .twitterlogo:hover {
   background: #00acee;
   transition: all 0.3s ease;
-  box-shadow: 5px 5px 10px #202020,
-    -5px -5px 10px #202020;
+  box-shadow: 5px 5px 10px #202020, -5px -5px 10px #202020;
 }
 
 .popup {
@@ -104,6 +99,56 @@ ul {
   margin-bottom: 9px;
   padding: 15px;
   color: #fff;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  max-width: 50vw;
+  width: 80%;
+  padding: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalCloseButton {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 @media only screen and (max-width: 520px) {
