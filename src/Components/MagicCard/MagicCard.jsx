@@ -14,7 +14,7 @@ const MagicCard = ({ name, imageUrl, multiverseid }) => {
         <figure className="card">
           <h3>{name}</h3>
           <button type="button" onClick={HandlerDiplayCardsContainer}>
-            <img src={imageUrl} alt={name} />
+            <img className="cardImg" src={imageUrl} alt={name} />
           </button>
         </figure>
       )}
