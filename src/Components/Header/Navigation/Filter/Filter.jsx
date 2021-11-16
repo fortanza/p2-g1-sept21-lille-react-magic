@@ -1,12 +1,14 @@
 const Filter = () => {
   return (
-    <li>
-      <img
-        className="filter logo-header"
-        src="/assets/img/filter.png"
-        alt="filter"
-      />
-    </li>
+    <button type="submit">
+      <li>
+        <img
+          className="filter logo-header"
+          src="/assets/img/filter.png"
+          alt="filter"
+        />
+      </li>
+    </button>
   );
 };
 
