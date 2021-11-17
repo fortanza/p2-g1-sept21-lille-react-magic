@@ -9,7 +9,6 @@ const Cards = () => {
   const [magicCards, setMagicCards] = useState([]);
 
   const [loading, setLoading] = useState(false);
-  const { needle } = useParams();
 
   const {
     needleName,
@@ -21,7 +20,6 @@ const Cards = () => {
     needleType,
   } = useParams();
 
-
   useEffect(() => {
     setLoading(true);
     axios
@@ -31,46 +29,31 @@ const Cards = () => {
       .then(({ data }) => {
         setMagicCards(data.cards);
 
-        setLoading();
+        setLoading(false);
       })
       .catch(() => {
         console.error('Plz fix your call, or set up your internet');
-        setLoading();
-
-
+        setLoading(false);
       });
   }, []);
 
-  return (
+  if (loading) {
+    return <Spinner />;
+  }
 
+  if (!magicCards.length) {
+    return <p className="searchError">Oups, no result for this request...</p>;
+  }
+
+  return (
     <section className="container">
       <h2 className="cardsTitle">Your Cards Search</h2>
-      {loading ? (
-        <Spinner />
-      ) : (
-        <div className="grid">
-          {magicCards.map((magic) => {
-            return <MagicCard {...magic} />;
-          })}
-        </div>
-      )}
+      <div className="grid">
+        {magicCards.map((magic) => {
+          return <MagicCard {...magic} />;
+        })}
+      </div>
     </section>
-
-    <>
-      {magicCards.length ? (
-        <section className="container">
-          <h2 className="cardsTitle">Your Cards Search</h2>
-          <div className="grid">
-            {magicCards.map((magic) => {
-              return <MagicCard {...magic} />;
-            })}
-          </div>
-        </section>
-      ) : (
-        <p className="searchError">Oups, no result for this request...</p>
-      )}
-    </>
-
   );
 };
 
