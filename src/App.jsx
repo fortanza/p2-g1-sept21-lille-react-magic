@@ -5,6 +5,7 @@ import Home from 'Containers/Home';
 import SearchCards from 'Containers/SearchCards/SearchCards';
 import CardDescription from 'Containers/CardDescription';
 import './App.css';
+import LoreOfMagic from 'Containers/SectionLore/LoreOfMagic';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/searchCards/:needle" component={SearchCards} />
         <Route path="/card" component={CardDescription} />
+        <Route path="/lore" component={LoreOfMagic} />
       </Switch>
       <Footer />
     </div>
