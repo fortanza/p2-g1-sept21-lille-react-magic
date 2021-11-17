@@ -56,31 +56,61 @@ const FilterOption = () => {
   }, []);
 
   return (
-    <>
-      <div className="filterWrap">
-        Name :
+    <div className="filterContainer">
+      <h1 className="filterTitle">Filter Options</h1>
+      <div className="nameSection">
+        <p className="pTitle">Card Name :</p>
         <input
           type="search"
-          className="searchName filterInput"
+          className="searchName"
           placeholder="Name..."
           onChange={HandlerChangeNameValue}
         />
-        Power :
-        <input
-          type="search"
-          className="searchPower filterInput"
-          placeholder="Power..."
-          onChange={HandlerChangePowerValue}
-        />
-        Toughness :
-        <input
-          type="search"
-          className="searchToughness filterInput"
-          placeholder="Toughness..."
-          onChange={HandlerChangeToughnessValue}
-        />
-        Color :
-        <select name="colors" id="colors" onChange={HandlerChangeColorValue}>
+      </div>
+      <div className="statsTypeSection">
+        <div className="subSection">
+          <p className="pTitle"> Type : </p>
+          <select
+            name="types"
+            className="typeSelect"
+            onChange={HandlerChangeTypeValue}
+          >
+            <option value="">Select a Type</option>
+            {listTypes.map((type) => {
+              return (
+                <>
+                  <option value={type}>{type}</option>
+                </>
+              );
+            })}
+          </select>
+        </div>
+        <div>
+          <div className="statsSection">
+            <p className="pTitle">Stats :</p>
+            <input
+              type="search"
+              placeholder="0"
+              className="searchStats"
+              onChange={HandlerChangePowerValue}
+            />
+            /
+            <input
+              type="search"
+              placeholder="0"
+              className="searchStats "
+              onChange={HandlerChangeToughnessValue}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="colorSection">
+        <p className="pTitle">Color :</p>
+        <select
+          name="colors"
+          className="colorSelect"
+          onChange={HandlerChangeColorValue}
+        >
           <option value="">Select a Color</option>
           <option value="Black">Black</option>
           <option value="Blue">Blue</option>
@@ -88,44 +118,50 @@ const FilterOption = () => {
           <option value="White">White</option>
           <option value="Green">Green</option>
         </select>
-        Rarity :
-        <select name="rarity" id="rarity" onChange={HandlerChangeRarityValue}>
-          <option value="">Select a Rarity</option>
-          <option value="Common">Common</option>
-          <option value="Uncommon">Uncommon</option>
-          <option value="Rare">Rare</option>
-          <option value="Mythic">Mythic</option>
-        </select>
-        Set :
-        <select name="sets" id="sets" onChange={HandlerChangeSetValue}>
-          <option value="">Select a Set</option>
-          {listSets.map((set) => {
-            return (
-              <>
-                <option value={set.code}>{set.name}</option>
-              </>
-            );
-          })}
-        </select>
-        <select name="types" id="types" onChange={HandlerChangeTypeValue}>
-          <option value="">Select a Type</option>
-          {listTypes.map((type) => {
-            return (
-              <>
-                <option value={type}>{type}</option>
-              </>
-            );
-          })}
-        </select>
+      </div>
+      <div className="setsRaritySection">
+        <div className="setsSection">
+          <p className="pTitle">Sets : </p>
+          <select
+            name="sets"
+            className="setsSelect"
+            onChange={HandlerChangeSetValue}
+          >
+            <option value="">Select a Set</option>
+            {listSets.map((set) => {
+              return (
+                <>
+                  <option value={set.code}>{set.name}</option>
+                </>
+              );
+            })}
+          </select>
+        </div>
+        <div>
+          <p className="pTitle">Rarity :</p>
+          <select
+            name="rarity"
+            className="raritySelect"
+            onChange={HandlerChangeRarityValue}
+          >
+            <option value="">Select a Rarity</option>
+            <option value="Common">Common</option>
+            <option value="Uncommon">Uncommon</option>
+            <option value="Rare">Rare</option>
+            <option value="Mythic">Mythic</option>
+          </select>
+        </div>
+      </div>
+      <div className="buttonSection">
         <button
-          className="filterSubmit"
+          className="submitBtn"
           type="submit"
           onClick={HandlerDiplayCardsContainer}
         >
           Submit
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

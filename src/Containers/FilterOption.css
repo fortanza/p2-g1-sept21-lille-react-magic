@@ -1,20 +1,198 @@
-.filterWrap {
+.filterTitle {
+  width: 25vw;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.filterContainer {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
-  padding: 100px;
+  width: 100vw;
+  padding: 75px 300px;
+}
+
+.typeSelect {
+  margin-left: 10px;
+  width: 20vw;
+  border: none;
+}
+
+.colorSelect {
+  margin-left: 5px;
+  width: 20vw;
+  border: none;
+}
+
+.setsSelect {
+  margin-right: 100px;
+  width: 20vw;
+  border: none;
+}
+
+.statsSection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.searchName {
+  margin-left: 5px;
+  padding: 5px;
+  width: 80%;
+  border: none;
+}
+
+.searchStats {
+  margin: 3px;
+  padding: 5px;
+  justify-content: center;
+  width: 30px;
+}
+
+.subSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.nameSection {
+  padding: 40px 0 30px 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 2px solid #c8371b;
+}
+
+.statsTypeSection {
+  padding: 40px 100px 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 2px solid #c8371b;
+}
+
+.colorSection {
+  padding: 40px 100px 30px 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #c8371b;
+}
+
+.setsRaritySection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 100px 30px 10px;
+  width: 100%;
+  border-bottom: 2px solid #c8371b;
+}
+
+.buttonSection {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  padding: 10px 100px 10px 100px;
+  width: 100%;
 }
 
-.inputName {
-  width: 50vw;
+.submitBtn {
+  margin: 10px;
+  padding: 10px 30px;
+  align-items: center;
+  background-color: #c8371b;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 1000;
+  transition: all 250ms;
 }
 
-.inputPower {
-  width: 10vw;
+.submitBtn:hover {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transform: translateY(-1px);
 }
 
-.filterSubmit {
-  background-color: white;
+@media only screen and (max-width: 1280px) {
+  .filterContainer {
+    padding: 75px 200px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .filterContainer {
+    padding: 75px 100px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .nameSection {
+    padding: 40px 0 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #c8371b;
+  }
+
+  .colorRaritySection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filterContainer {
+    margin-top: 100px;
+    padding: 0 20px 5px 20px;
+    height: 100%;
+  }
+
+  .filterTitle {
+    width: 60vw;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .setsRaritySection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+  }
+
+  .statsTypeSection {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .typeSelect {
+    margin-left: 10px;
+    width: 30vw;
+    border: none;
+  }
+
+  .colorSection {
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .colorSelect {
+    width: 50vw;
+    margin: 0;
+    border: none;
+  }
+
+  .setsSelect {
+    width: 30vw;
+    margin: 0;
+  }
+
+  .pTitle {
+    margin-bottom: 5px;
+  }
 }
