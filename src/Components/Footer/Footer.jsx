@@ -25,6 +25,7 @@ export default function Footer() {
           }
           content="Apprendre les règles de Magic: The Gathering"
           position="top center"
+          hideOnScroll="auto"
         />
 
         {openFooterModal && (
@@ -49,6 +50,7 @@ export default function Footer() {
           }
           content="Site officiel Magic: The Gathering"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -67,6 +69,7 @@ export default function Footer() {
           }
           content="Facebook"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -85,6 +88,7 @@ export default function Footer() {
           }
           content="YouTube"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -103,6 +107,7 @@ export default function Footer() {
           }
           content="Twitter"
           position="top center"
+          hideOnScroll="auto"
         />
       </ul>
       <ul className="linksContainer">
