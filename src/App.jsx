@@ -4,8 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Home from 'Containers/Home';
 import SearchCards from 'Containers/SearchCards/SearchCards';
 import CardDescription from 'Containers/CardDescription';
+import AboutUs from 'Containers/AboutUs';
 import FilterOption from 'Containers/FilterOption';
-
 import './App.css';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/card" component={CardDescription} />
+        <Route path="/aboutUs" component={AboutUs} />
         <Route
           path="/CardDescription/:multiverseid"
           component={CardDescription}
@@ -27,6 +28,7 @@ function App() {
           path="/searchCards/:needleName/:needleType/:needlePower/:needleToughness/:needleColor/:needleRarity/:needleSet"
           component={SearchCards}
         />
+
       </Switch>
       <Footer />
     </div>
