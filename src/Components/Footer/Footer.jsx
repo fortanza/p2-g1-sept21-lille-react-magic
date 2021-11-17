@@ -1,6 +1,7 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Popup } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -98,7 +99,10 @@ export default function Footer() {
           <Link to="/aboutUs">About us</Link>
         </li>
         <li className="link">Lore of Magic: The Gathering</li>
-        <li className="link">Random card</li>
+
+        <Link to="/card">
+          <li className="link">Random card</li>
+        </Link>
       </ul>
       <p className="disclamer">
         <br />
