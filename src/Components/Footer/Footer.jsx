@@ -1,7 +1,6 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Popup } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
