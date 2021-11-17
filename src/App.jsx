@@ -28,7 +28,6 @@ function App() {
           path="/searchCards/:needleName/:needleType/:needlePower/:needleToughness/:needleColor/:needleRarity/:needleSet"
           component={SearchCards}
         />
-
       </Switch>
       <Footer />
     </div>
