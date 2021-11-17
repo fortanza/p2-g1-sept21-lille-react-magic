@@ -1,6 +1,10 @@
+import { Link } from 'react-router-dom';
+
 const Filter = () => {
   return (
+
     <button type="submit">
+    <Link to="/filter">
       <li>
         <img
           className="filter logo-header"
@@ -9,6 +13,7 @@ const Filter = () => {
         />
       </li>
     </button>
+    </Link>
   );
 };
 

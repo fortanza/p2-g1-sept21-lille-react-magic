@@ -5,15 +5,23 @@ import { useState } from 'react';
 export default function SearchBar() {
   const history = useHistory();
 
-  const [needle, setNeedle] = useState('');
+  const [needleName, setNeedleName] = useState('');
+  const [needlePower] = useState(' ');
+  const [needleColor] = useState(' ');
+  const [needleRarity] = useState(' ');
+  const [needleSet] = useState(' ');
+  const [needleType] = useState(' ');
+  const [needleToughness] = useState(' ');
 
   const HandlerDiplayCardsContainer = (event) => {
     event.preventDefault();
-    history.push(`/SearchCards/${needle}`);
+    history.push(
+      `/SearchCards/${needleName}/${needleType}/${needlePower}/${needleToughness}/${needleColor}/${needleRarity}/${needleSet}`
+    );
   };
 
   const HandlerChangeValue = (e) => {
-    setNeedle(e.target.value);
+    setNeedleName(e.target.value);
   };
 
   return (
