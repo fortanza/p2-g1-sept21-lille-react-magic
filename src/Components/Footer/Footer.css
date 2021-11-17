@@ -101,54 +101,48 @@ ul {
   color: #fff;
 }
 
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1040;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modalWrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
+.footerModalBackground {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  outline: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.modal {
-  z-index: 100;
-  background: white;
-  position: relative;
-  margin: auto;
-  border-radius: 5px;
-  max-width: 50vw;
-  width: 80%;
-  padding: 1rem;
-}
-
-.modalHeader {
+.titleModal {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
 
-.modalCloseButton {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #000;
+.titleModal button {
   cursor: pointer;
-  border: none;
-  background: transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: 1000;
+  font-size: 50px;
+  color: rgb(200, 55, 27);
+}
+
+.cross {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerModalContainer .titleModal {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
 }
 
 @media only screen and (max-width: 520px) {
@@ -180,5 +174,10 @@ ul {
 
   .link {
     margin: 10px 0;
+  }
+
+  iframe {
+    width: 260px;
+    height: 175px;
   }
 }
