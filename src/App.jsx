@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from 'Containers/Home';
 import SearchCards from 'Containers/SearchCards/SearchCards';
 import CardDescription from 'Containers/CardDescription';
+import AboutUs from 'Containers/AboutUs';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/searchCards/:needle" component={SearchCards} />
         <Route path="/card" component={CardDescription} />
+        <Route path="/aboutUs" component={AboutUs} />
       </Switch>
       <Footer />
     </div>
