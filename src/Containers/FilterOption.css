@@ -1,0 +1,20 @@
+.filterWrap {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputName {
+  width: 50vw;
+}
+
+.inputPower {
+  width: 10vw;
+}
+
+.filterSubmit {
+  background-color: white;
+}

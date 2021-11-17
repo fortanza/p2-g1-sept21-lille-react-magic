@@ -1,10 +1,18 @@
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
-  margin: 50px;
-}
-
 .cardsTitle {
   text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchError {
+  font-size: 50px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
