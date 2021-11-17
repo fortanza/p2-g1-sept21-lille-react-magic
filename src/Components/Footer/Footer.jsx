@@ -1,11 +1,10 @@
+import { useState } from 'react';
 import './Footer.css';
 import { Popup } from 'semantic-ui-react';
-import useModal from 'Components/Footer/useModal';
 import FooterModal from './FooterModal';
 
 export default function Footer() {
-  const { isShowing: isRulesGamesShowed, toggle: toggleRulesGames } =
-    useModal();
+  const [openFooterModal, setOpenFooterModal] = useState(false);
   return (
     <footer className="footer">
       <ul className="socialContainer">
@@ -14,7 +13,9 @@ export default function Footer() {
             <button
               type="button"
               className="socialBtn rulelogo"
-              onClick={toggleRulesGames}
+              onClick={() => {
+                setOpenFooterModal(true);
+              }}
             >
               <img
                 alt="Apprendre les règles de Magic: The Gathering"
@@ -26,11 +27,9 @@ export default function Footer() {
           position="top center"
         />
 
-        <FooterModal
-          isShowing={isRulesGamesShowed}
-          hide={toggleRulesGames}
-          src="Rules"
-        />
+        {openFooterModal && (
+          <FooterModal closeFooterModal={setOpenFooterModal} />
+        )}
 
         <Popup
           trigger={

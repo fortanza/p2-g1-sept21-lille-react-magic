@@ -1,39 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-const FooterModal = ({ isShowing, hide, title }) =>
-  isShowing &&
-  ReactDOM.createPortal(
-    <>
-      <div className="modalOverlay">
-        <div className="modalWrapper">
-          <div className="modal">
-            <div className="modalHeader">
-              <h4>{title}</h4>
-              <iframe
-                width="700"
-                height="500"
-                src="https://www.youtube-nocookie.com/embed/RZyXU1L3JXk"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-              <button type="button" className="modalCloseButton" onClick={hide}>
-                <span>&times;</span>
-              </button>
-            </div>
-          </div>
+function FooterModal({ closeFooterModal }) {
+  return (
+    <div className="footerModalBackground">
+      <div className="footerModalContainer">
+        <div className="titleModal">
+          <button
+            className="cross"
+            type="button"
+            onClick={() => closeFooterModal(false)}
+          >
+            &times;
+          </button>
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/RZyXU1L3JXk"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </div>
-    </>,
-    document.body
+    </div>
   );
+}
+
 FooterModal.propTypes = {
-  isShowing: PropTypes.bool.isRequired,
-  hide: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
+  closeFooterModal: PropTypes.string,
+};
+
+FooterModal.defaultProps = {
+  closeFooterModal: 'X',
 };
 
 export default FooterModal;
