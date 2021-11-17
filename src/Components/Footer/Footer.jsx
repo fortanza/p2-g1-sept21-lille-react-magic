@@ -93,7 +93,9 @@ export default function Footer() {
         />
       </ul>
       <ul className="linksContainer">
-        <li className="link">Home</li>
+        <Link to="/">
+          <li className="link">Home</li>{' '}
+        </Link>
         <li className="link">
           <Link to="/aboutUs">About us</Link>
         </li>
