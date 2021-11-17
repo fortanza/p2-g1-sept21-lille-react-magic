@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom';
+
 const Filter = () => {
   return (
-    <li>
-      <img
-        className="filter logo-header"
-        src="/assets/img/filter.png"
-        alt="filter"
-      />
-    </li>
+    <Link to="/filter">
+      <li>
+        <img
+          className="filter logo-header"
+          src="/assets/img/filter.png"
+          alt="filter"
+        />
+      </li>
+    </Link>
   );
 };
 
