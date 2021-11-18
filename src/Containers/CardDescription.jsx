@@ -74,13 +74,15 @@ export default function CardDescription() {
             </p>
           )}
           <p className="cardArtist">🎨{`${cards.artist} - ${cards.frame}`}</p>
-          <button type="submit" onClick={GetRandomCards}>
-            <img
-              className="logoReload"
-              src="/assets/img/reload.png"
-              alt="reload"
-            />
-          </button>
+          <div className="reloadLogoWrap">
+            <button type="submit" onClick={GetRandomCards}>
+              <img
+                className="logoReload"
+                src="/assets/img/reload.png"
+                alt="reload"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

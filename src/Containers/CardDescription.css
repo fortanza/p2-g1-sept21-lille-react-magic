@@ -11,7 +11,7 @@
 .cardAttribute {
   width: 30vw;
   height: 70vh;
-  background-color: #301e38;
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   padding: 0 20px 0 20px;
 }
@@ -22,7 +22,7 @@
 
 .cardImage {
   margin: 0 20px;
-  width: 300px;
+  width: 350px;
   border-radius: 15px;
 }
 
@@ -74,8 +74,15 @@
 }
 
 .logoReload {
-  width: 3vw;
+  width: 4vw;
   cursor: pointer;
+}
+
+.reloadLogoWrap {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 li {
@@ -101,7 +108,7 @@ li {
   }
 
   .logoReload {
-    width: 10vw;
+    width: 100px;
     cursor: pointer;
   }
 

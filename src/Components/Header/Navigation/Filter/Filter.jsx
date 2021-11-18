@@ -5,14 +5,15 @@ const Filter = () => {
 
     <button type="submit">
     <Link to="/filter">
-      <li>
-        <img
-          className="filter logo-header"
-          src="/assets/img/filter.png"
-          alt="filter"
-        />
-      </li>
-    </button>
+      <button type="submit">
+        <li>
+          <img
+            className="filter logo-header"
+            src="/assets/img/filter.png"
+            alt="filter"
+          />
+        </li>
+      </button>
     </Link>
   );
 };
