@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './Footer.css';
 import { Popup } from 'semantic-ui-react';
-import FooterModal from './FooterModal';
 import { Link } from 'react-router-dom';
-
+import FooterModal from './FooterModal';
 
 export default function Footer() {
   const [openFooterModal, setOpenFooterModal] = useState(false);
