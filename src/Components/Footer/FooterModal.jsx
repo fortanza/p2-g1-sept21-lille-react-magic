@@ -6,13 +6,6 @@ function FooterModal({ closeFooterModal }) {
     <div className="footerModalBackground">
       <div className="footerModalContainer">
         <div className="titleModal">
-          <button
-            className="cross"
-            type="button"
-            onClick={() => closeFooterModal(false)}
-          >
-            &times;
-          </button>
           <iframe
             src="https://www.youtube-nocookie.com/embed/RZyXU1L3JXk"
             title="YouTube video player"
@@ -20,6 +13,13 @@ function FooterModal({ closeFooterModal }) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
+          <button
+            className="cross"
+            type="button"
+            onClick={() => closeFooterModal(false)}
+          >
+            &times;
+          </button>
         </div>
       </div>
     </div>
