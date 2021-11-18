@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
+  height: 80vh;
 }
 
 .flex {
@@ -30,4 +31,8 @@
   margin-top: 5vh;
   height: 15vh;
   display: block;
+}
+
+.socialLink a {
+  margin: 0 10px;
 }
