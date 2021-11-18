@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 
 const Filter = () => {
   return (
+
+    <button type="submit">
     <Link to="/filter">
       <button type="submit">
         <li>
