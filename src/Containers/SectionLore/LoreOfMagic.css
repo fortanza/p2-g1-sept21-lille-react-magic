@@ -1,0 +1,29 @@
+.loreContainer {
+  height: 100%;
+  background-color: black;
+  border-radius: 10vh;
+  color: burlywood;
+  text-align: center;
+  margin: 10vh 20vh 10vh 20vh;
+  font-size: 18px;
+  padding: 5vh;
+  box-shadow: rgb(200, 55, 27) 0 0 0 1px;
+}
+
+.beginning {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: rgb(200, 55, 27);
+}
+
+.begin {
+  padding-top: 7vh;
+  width: 20vh;
+  padding-bottom: 10vh;
+}
+
+@media screen and (max-width: 750px) {
+  .loreContainer {
+    margin: 10vh 5vh 10vh 5vh;
+  }
+}
