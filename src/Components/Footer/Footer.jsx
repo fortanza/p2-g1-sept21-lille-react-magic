@@ -115,14 +115,16 @@ export default function Footer() {
       </ul>
       <ul className="linksContainer">
         <li className="link">Home</li>
+          <Link to="/lore">
+            <li className="link">Lore of Magic: The Gathering</li>
+          </Link>
         <li className="link">
           <Link to="/aboutUs">About us</Link>
         </li>
-        <li className="link">Lore of Magic: The Gathering</li>
-
         <Link to="/card">
           <li className="link">Random card</li>
         </Link>
+
       </ul>
       <p className="disclamer">
         <br />

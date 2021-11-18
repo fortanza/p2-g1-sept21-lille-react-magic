@@ -7,6 +7,7 @@ import CardDescription from 'Containers/CardDescription';
 import AboutUs from 'Containers/AboutUs';
 import FilterOption from 'Containers/FilterOption';
 import './App.css';
+import LoreOfMagic from 'Containers/SectionLore/LoreOfMagic';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/card" component={CardDescription} />
+        <Route path="/lore" component={LoreOfMagic} />
         <Route path="/aboutUs" component={AboutUs} />
         <Route
           path="/CardDescription/:multiverseid"
@@ -28,7 +30,6 @@ function App() {
           path="/searchCards/:needleName/:needleType/:needlePower/:needleToughness/:needleColor/:needleRarity/:needleSet"
           component={SearchCards}
         />
-
       </Switch>
       <Footer />
     </div>
