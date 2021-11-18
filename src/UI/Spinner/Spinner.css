@@ -1,3 +1,7 @@
+.loaderWrapper {
+  height: 50vh;
+}
+
 .loader {
   -webkit-animation: rotate 4s infinite linear;
   animation: rotate 4s infinite linear;
