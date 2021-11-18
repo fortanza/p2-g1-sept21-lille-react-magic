@@ -14,14 +14,6 @@ const Filter = () => {
           />
         </li>
       </button>
-      <li>
-        <img
-          className="filter logo-header"
-          src="/assets/img/filter.png"
-          alt="filter"
-        />
-      </li>
-    </button>
     </Link>
   );
 };

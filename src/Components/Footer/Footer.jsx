@@ -3,8 +3,6 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Popup } from 'semantic-ui-react';
 import FooterModal from './FooterModal';
-import { Link } from 'react-router-dom';
-
 
 export default function Footer() {
   const [openFooterModal, setOpenFooterModal] = useState(false);
@@ -114,10 +112,15 @@ export default function Footer() {
         />
       </ul>
       <ul className="linksContainer">
-        <li className="link">Home</li>
+
+        <Link to="/">
+          <li className="link">Home</li>{' '}
+        </Link>
+
           <Link to="/lore">
             <li className="link">Lore of Magic: The Gathering</li>
           </Link>
+
         <li className="link">
           <Link to="/aboutUs">About us</Link>
         </li>
