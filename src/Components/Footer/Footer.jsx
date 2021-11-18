@@ -1,15 +1,25 @@
+import { useState } from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Popup } from 'semantic-ui-react';
+import FooterModal from './FooterModal';
 import { Link } from 'react-router-dom';
 
+
 export default function Footer() {
+  const [openFooterModal, setOpenFooterModal] = useState(false);
   return (
     <footer className="footer">
       <ul className="socialContainer">
         <Popup
           trigger={
-            <button type="button" className="socialBtn rulelogo">
+            <button
+              type="button"
+              className="socialBtn rulelogo"
+              onClick={() => {
+                setOpenFooterModal(true);
+              }}
+            >
               <img
                 alt="Apprendre les règles de Magic: The Gathering"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABgUlEQVRIie2Wu0oDQRSG/5OEqJVgYSV4QREUtFQQFG8PIGLrC6TyXcRW0EosfACFaGOpRlDwAhams1AsRf0ssguTNdndMdlU/rDw75yZ+WbPnt0Z6V8dkjVqBMYlDTSLNxGSqmZ2570KYAg4ozWdAoM+0CJQaREa6gooxvEKjl+XNBX4HUlHKda7q9oriWpa0pqkgzTgUcdvmdlHEhXojwmPxY11wXnHzwNJXEmKS2chJtY0eJyG2opyjr/JGtYQbGaHqhXFanBVsgTXpdrMrkMPvHYMnKA3SZeSvhrEuiXN+sznA54zs9tmQaAkaTvtZLnkLtnI54nPgQs1TnWPpJmswL2SFn0mbxfYt7hGgBXn/sXMkj9RoBzZcSYS+pdS7FobYf9OF9dkaLIsrn1Je4H/9e+PA0cBvsVVNbMToMtp+0wDfpS07AGKajPI0JLTdp84ChgG3ttzEgJSHIdc+ALw1AZomcgBMPH4CuRV2y77Uq22Xt+Sns3s4Q9j/9Ue/QAIGcO7BdCj5AAAAABJRU5ErkJggg=="
@@ -18,7 +28,13 @@ export default function Footer() {
           }
           content="Apprendre les règles de Magic: The Gathering"
           position="top center"
+          hideOnScroll="auto"
         />
+
+        {openFooterModal && (
+          <FooterModal closeFooterModal={setOpenFooterModal} />
+        )}
+
         <Popup
           trigger={
             <a
@@ -37,6 +53,7 @@ export default function Footer() {
           }
           content="Site officiel Magic: The Gathering"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -55,6 +72,7 @@ export default function Footer() {
           }
           content="Facebook"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -73,6 +91,7 @@ export default function Footer() {
           }
           content="YouTube"
           position="top center"
+          hideOnScroll="auto"
         />
         <Popup
           trigger={
@@ -91,6 +110,7 @@ export default function Footer() {
           }
           content="Twitter"
           position="top center"
+          hideOnScroll="auto"
         />
       </ul>
       <ul className="linksContainer">
