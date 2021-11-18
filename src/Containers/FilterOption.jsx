@@ -46,7 +46,12 @@ const FilterOption = () => {
 
   useEffect(() => {
     axios.get(`https://api.magicthegathering.io/v1/sets`).then(({ data }) => {
-      setlistSets(data.sets);
+      setlistSets(
+        data.sets.sort((set1, set2) => {
+          if (set1.name < set2.name) return -1;
+          return 1;
+        })
+      );
     });
   }, []);
   useEffect(() => {
@@ -128,13 +133,24 @@ const FilterOption = () => {
             onChange={HandlerChangeSetValue}
           >
             <option value="">Select a Set</option>
-            {listSets.map((set) => {
-              return (
-                <>
-                  <option value={set.code}>{set.name}</option>
-                </>
-              );
-            })}
+            {listSets
+              .filter((e) => {
+                return (
+                  e.onlineOnly === !true &&
+                  e.type !== 'promo' &&
+                  e.type !== 'memorabilia' &&
+                  e.type !== 'token' &&
+                  e.type !== 'funny' &&
+                  e.type !== 'box'
+                );
+              })
+              .map((set) => {
+                return (
+                  <>
+                    <option value={set.code}>{set.name}</option>
+                  </>
+                );
+              })}
           </select>
         </div>
         <div>
