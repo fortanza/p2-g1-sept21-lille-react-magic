@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import { Popup } from 'semantic-ui-react';
 import FooterModal from './FooterModal';
 
-
-
 export default function Footer() {
   const [openFooterModal, setOpenFooterModal] = useState(false);
   return (
