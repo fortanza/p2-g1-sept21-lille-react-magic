@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/fortanza/p2-g1-sept21-lille-react-magic/static/css/main.89140b4a.chunk.css",
+    "main.js": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/main.d804e478.chunk.js",
+    "main.js.map": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/main.d804e478.chunk.js.map",
+    "runtime-main.js": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/runtime-main.db27b167.js",
+    "runtime-main.js.map": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/runtime-main.db27b167.js.map",
+    "static/js/2.143e739d.chunk.js": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/2.143e739d.chunk.js",
+    "static/js/2.143e739d.chunk.js.map": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/2.143e739d.chunk.js.map",
+    "index.html": "/fortanza/p2-g1-sept21-lille-react-magic/index.html",
+    "static/css/main.89140b4a.chunk.css.map": "/fortanza/p2-g1-sept21-lille-react-magic/static/css/main.89140b4a.chunk.css.map",
+    "static/js/2.143e739d.chunk.js.LICENSE.txt": "/fortanza/p2-g1-sept21-lille-react-magic/static/js/2.143e739d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db27b167.js",
+    "static/js/2.143e739d.chunk.js",
+    "static/css/main.89140b4a.chunk.css",
+    "static/js/main.d804e478.chunk.js"
+  ]
+}
